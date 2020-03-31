@@ -1,12 +1,12 @@
 {
-  "name": "nuxt-portfolio",
+  "name": "cd.com5",
   "version": "1.0.0",
-  "description": "My peachy Nuxt.js project",
+  "description": "",
   "author": "Carter",
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "nuxt generate",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."

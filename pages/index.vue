@@ -1,68 +1,113 @@
 <template>
   <div class="container">
     <div>
-      <logo />
-      <h1 class="title">
-        nuxt-portfolio
-      </h1>
-      <h2 class="subtitle">
-        My peachy Nuxt.js project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <h1 class="title">Carter Duong</h1>
+      <p>Design and Development</p>
+      <br />
+      <h2>Recently</h2>
+      <ul>
+        <li>Bullet Journal</li>
+        <li>elliottevan.com</li>
+        <li>Sunset Spot Remix</li>
+        <li>Fashion Quarterly</li>
+        <li>HF.FM</li>
+        <li>Resume</li>
+        <li>Posters</li>
+      </ul>
+      <br />
+      <h2>Elsewhere</h2>
+      <ul>
+        <li>Email</li>
+        <li>
+          <a target="_blank" href="https://www.are.na/carter-duong">Are.na</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://github.com/carterduong">Github</a>
+        </li>
+        <li>SW-7361-6305-5428</li>
+      </ul>
+    </div>
+    <div class="bottom-left">
+      <!-- Last updated <span class="tabular-num">03.29.20</span> -->
+      <br />
+      <span class="tabular-num">
+        {{ Math.ceil(weather.temperature.value * 1.8 + 32) }}°F
+        {{ weather.textDescription }}
+      </span>
+      <br />
+      SGV
+    </div>
+    <div id="colophon">
+      <!-- <img src="~/assets/1_bujo/screenshot.png" /> -->
+      <!-- This site is built with Nuxt.js and is hosted on ZEIT Now. -->
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import axios from 'axios'
 
 export default {
-  components: {
-    Logo
+  asyncData({ params }) {
+    return axios
+      .get('https://api.weather.gov/stations/WTHC1/observations/latest')
+      .then((res) => {
+        return { weather: res.data.properties }
+      })
   }
 }
 </script>
 
 <style>
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 0.75rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
+  margin: 1rem;
+}
+
+.bottom-left {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+.tabular-num {
+  font-variant-numeric: tabular-nums;
+}
+
+#colophon {
+  font-size: 0.8rem;
+  color: darkgrey;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  z-index: -1;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+img {
+  height: auto;
+  width: 50%;
+  /* box-shadow: 0px 0px 10px grey; */
 }
 </style>
