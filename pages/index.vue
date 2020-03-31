@@ -38,7 +38,7 @@
       SGV
     </div>
     <div id="colophon">
-      <!-- <img src="~/assets/1_bujo/screenshot.png" /> -->
+      <img src="~/assets/1_bujo/screenshot.png" />
       <!-- This site is built with Nuxt.js and is hosted on ZEIT Now. -->
     </div>
   </div>
