@@ -46,13 +46,4 @@ export default {
 .rectangle--right {
   border-radius: 5em;
 }
-
-.text {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: calc(100vw * 2 / 3 - 3em);
-  position: sticky;
-  top: 1em;
-}
 </style>
