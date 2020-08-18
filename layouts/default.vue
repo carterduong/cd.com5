@@ -7,6 +7,7 @@
 <style>
 html {
   font-family: neue-haas-unica, Helvetica, Arial, sans-serif;
+  /* font-family: 'Times New Roman', Times, serif; */
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

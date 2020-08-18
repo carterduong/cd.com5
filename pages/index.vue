@@ -4,6 +4,15 @@
       <h1 class="title">Carter Duong</h1>
       <p>Design and Development</p>
       <br />
+      <h2>ATM</h2>
+      <ul>
+        <li>
+          {{ Math.ceil(weather.temperature.value * 1.8 + 32) }}°F
+          {{ weather.textDescription }}
+        </li>
+        <li>SGV</li>
+      </ul>
+      <br />
       <h2>Recently</h2>
       <ul>
         <li>Bullet Journal</li>
@@ -28,18 +37,20 @@
       </ul>
     </div>
     <div class="bottom-left">
-      <!-- Last updated <span class="tabular-num">03.29.20</span> -->
-      <br />
-      <span class="tabular-num">
-        {{ Math.ceil(weather.temperature.value * 1.8 + 32) }}°F
-        {{ weather.textDescription }}
-      </span>
-      <br />
-      SGV
+      Last updated 03.29.20<br />
+      This site is built with Nuxt.js and is hosted on ZEIT Now.
     </div>
     <div id="colophon">
       <img src="~/assets/1_bujo/screenshot.png" />
-      <!-- This site is built with Nuxt.js and is hosted on ZEIT Now. -->
+      <p>
+        2020, LitElement, localStorage. Fork of Bastian Allgeier's Bulllet
+        Journal.
+      </p>
+      <br />
+      <p>
+        With respect to work, I find weeks to be a much better indicator of time
+        than months.
+      </p>
     </div>
   </div>
 </template>
