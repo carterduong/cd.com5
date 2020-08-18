@@ -18,22 +18,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-body {
-  background-color: black;
-  color: white;
-  font-family: neue-haas-unica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.25em;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
 header::selection {
   background: white;
   color: black;

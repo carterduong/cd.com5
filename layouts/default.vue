@@ -1,18 +1,17 @@
 <template>
-  <div>
-    <nuxt />
-  </div>
+  <nuxt />
 </template>
+
+<script>
+import 'normalize.css'
+
+export default {
+  name: 'App'
+}
+</script>
 
 <style>
 html {
-  font-family: neue-haas-unica, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
   background-color: black;
   color: white;
   font-family: neue-haas-unica, sans-serif;
@@ -21,10 +20,8 @@ html {
   font-size: 1.25em;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+a {
+  color: white;
+  text-decoration: none;
 }
 </style>
