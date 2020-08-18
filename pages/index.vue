@@ -9,7 +9,6 @@
         Carter Duong
       </header>
 
-      <!-- <div class="middle-rectangle"></div> -->
       <header
         class="web-dev-header"
         style="margin: calc(80vh + 1em) 2em 0 2em;"
@@ -20,7 +19,6 @@
         >
       </header>
 
-      <!-- <div class="right-rectangle"></div> -->
       <header
         class="web-dev-header"
         style="margin: calc(80vh + 1em) 2em 0 2em;"
@@ -60,50 +58,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.hero-container {
-  // margin: 1em;
-  // height: calc(100vh - 2em);
-  // width: calc(100vw - 2em);
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  top: 0;
-}
-
-.rectangle {
-  // padding: 2em 1em 2em 1em;
-  padding: 2em;
-  width: calc(33.333% - 2em);
-}
-
-.rectangle--outline {
-  width: 100%;
-  border: 4px solid white;
-  box-sizing: border-box;
-}
-
-.rectangle--left,
-.rectangle--right {
-  height: 80%;
-}
-
-.rectangle--right {
-  border-radius: 5em;
-}
-
-.text {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: calc(100vw * 2 / 3 - 3em);
-  position: sticky;
-  top: 1em;
-}
-
-// ====
-
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -143,9 +97,6 @@ export default {
 
 footer {
   margin: 2em;
-}
-
-.header-name {
 }
 
 .name {
