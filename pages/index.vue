@@ -1,11 +1,16 @@
 <template>
   <main>
-    Index
+    <Hero />
   </main>
 </template>
 
 <script>
+import Hero from '~/components/Hero.vue'
+
 export default {
-  name: 'Index'
+  name: 'Index',
+  components: {
+    Hero
+  }
 }
 </script>
