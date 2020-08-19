@@ -28,11 +28,7 @@
       </header>
 
       <template v-for="project in projects">
-        <section :key="project.title">
-          <span class="name">{{ project.title }}</span>
-          <div>{{ project.description }}</div>
-          <nuxt-content :document="project" />
-        </section>
+        <project :key="project.title" :project="project" />
       </template>
 
       <footer>
@@ -44,11 +40,13 @@
 
 <script>
 import Hero from '~/components/Hero.vue'
+import Project from '~/components/Project.vue'
 
 export default {
   name: 'Index',
   components: {
-    Hero
+    Hero,
+    Project
   },
   async asyncData({ $content }) {
     const page = await $content('home').fetch()
