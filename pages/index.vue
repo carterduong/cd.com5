@@ -27,17 +27,13 @@
         <span>(other things, too)</span>
       </header>
 
-      <section>
-        <span class="name">elliottevan.com</span>
-      </section>
-      <section>
-        <span class="name">First Bloom</span>
-      </section>
-      <section>
-        <span class="name">Sunset Spot Remix</span>
-      </section>
-      <section></section>
-      <section></section>
+      <template v-for="project in projects">
+        <section :key="project.title">
+          <span class="name">{{ project.title }}</span>
+          <div>{{ project.description }}</div>
+          <nuxt-content :document="project" />
+        </section>
+      </template>
 
       <footer>
         info@carterduong.com
@@ -53,11 +49,27 @@ export default {
   name: 'Index',
   components: {
     Hero
+  },
+  async asyncData({ $content }) {
+    const page = await $content('home').fetch()
+    const projects = await $content('projects')
+      .sortBy('sort', 'desc')
+      .fetch()
+
+    return {
+      page,
+      projects
+    }
   }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+p,
+.fifty {
+  width: 50%;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -104,7 +116,13 @@ footer {
   border-radius: 2em;
   padding: 0.4em 1em 0.5em 1em;
 
+  color: white;
+  background-color: black;
+}
+
+.name:hover {
   color: black;
   background-color: white;
+  cursor: pointer;
 }
 </style>
