@@ -4,6 +4,18 @@ sort: 6
 format: Browser-based flyer concept 
 skills: Design & Development
 ---
-Responsive flyer concept created for EDZ’s first party in Los Angeles. Implemented using paper.js.
+<div class="project-info">
+<span class="name">First Bloom</span>
+<div>
+Responsive flyer concept created for EDZ’s first party in Los Angeles. Cancelled due to Covid-19.
+</div>
 
-Cancelled due to Covid-19.
+- Website, 2020
+- Vector graphics via Paper.js
+- Design, Development
+
+</div>
+
+<!-- <dynamic-video filename="FIRST BLOOM.mp4" class="image-100w"></dynamic-video> -->
+<div class="image-100w" style="padding:74.24% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/449533870?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+

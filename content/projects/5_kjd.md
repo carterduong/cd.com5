@@ -5,6 +5,15 @@ format: Looping website
 skills: Web Development
 collaborators: Design by Redwan El-Harrak
 ---
-An infinitely looping website developed for the promotion of Kerry J Dean's upcoming Observations and Orchestrations exhibition.
+<div class="project-info">
+<span class="name">oo.kerryjdean.com</span>
+<div>
+Infinitely looping website developed for the promotion of Kerry J Dean's Observations and Orchestrations exhibition.
 
-Implemented using jQuery and vanilla DOM manipulations on the frontend in conjunction with Kirby (PHP) on the backend.
+- Website, 2019
+- Design by Redwan El-Harrak
+- Vanilla DOM, jQuery, Kirby
+</div>
+</div>
+
+<dynamic-image filename="screenshots/oo-1.png" class="image-100w"></dynamic-image>
