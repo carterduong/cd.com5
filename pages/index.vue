@@ -2,25 +2,6 @@
   <main>
     <Hero />
     <main class="grid">
-      <div class="header-container">
-        <template v-if="screenWidth < 834">
-          Carter Duong
-        </template>
-        <template v-else>
-          <header class="name-header">
-            Carter Duong
-          </header>
-          <header class="web-dev-header">
-            <span>Frontend Web Development</span>
-            <span>&</span>
-          </header>
-          <header class="design-header">
-            <span>Design</span>
-            <span>(other things, too)</span>
-          </header>
-        </template>
-      </div>
-
       <template v-for="project in projects">
         <project :key="project.title" :project="project" />
       </template>
@@ -105,13 +86,25 @@ export default {
 }
 
 /*     Header     */
-.header-container {
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+// .header-container {
+//   // mobile only
+//   flex-direction: column;
+//   height: calc(80vh + 1em);
+//   margin: 1em 1em 20vh 1em;
+//   display: flex;
+//   align-items: flex-end;
+//   justify-content: space-between;
+
+//   @media only screen and (min-device-width: 400px) {
+//     flex-direction: row;
+//   }
+// }
+
+.mobile-header {
+  display: block;
 
   @media only screen and (min-device-width: $tablet-portrait) {
+    display: none;
   }
 }
 
@@ -127,11 +120,12 @@ export default {
 
 .web-dev-header,
 .design-header {
-  display: flex;
-  justify-content: space-between;
-  margin: 1em;
+  display: none;
 
   @media only screen and (min-device-width: $tablet-portrait) {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
     margin: calc(80vh + 1em) 2em 0 2em;
   }
 }
