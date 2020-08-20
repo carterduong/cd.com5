@@ -46,13 +46,11 @@ export default {
     Footer
   },
   async asyncData({ $content }) {
-    const page = await $content('home').fetch()
     const projects = await $content('projects')
       .sortBy('sort', 'desc')
       .fetch()
 
     return {
-      page,
       projects
     }
   }
