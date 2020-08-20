@@ -59,22 +59,26 @@ export default {
 
 <style lang="scss">
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: block;
+
+  @media only screen and (min-device-width: 834px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .grid header {
   margin: 2em;
-  // position: sticky;
-  // top: 2em;
   mix-blend-mode: exclusion;
 }
 
 .grid section {
-  grid-column: 1 / span 3;
-  margin: 2em;
-  margin-bottom: 0;
-  // border: 1px dotted white;
+  margin: 1em 1em 0 1em;
+
+  @media only screen and (min-device-width: 834px) {
+    margin: 2em 2em 0 2em;
+    grid-column: 1 / span 3;
+  }
 }
 
 .middle-rectangle {

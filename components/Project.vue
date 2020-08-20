@@ -25,9 +25,12 @@ hr {
 
 .nuxt-content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(min-content, max-content);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1em;
+
+  @media only screen and (min-device-width: 834px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .name {
@@ -56,26 +59,45 @@ hr {
 }
 
 .image-100w {
-  grid-column: 2 / span 2;
   width: 100%;
+  grid-column: 1 / span 2;
+
+  @media only screen and (min-device-width: 834px) {
+    grid-column: 2 / span 2;
+  }
 }
 
 .image-50w {
-  grid-column: 2 / span 1;
   width: 100%;
+
+  @media only screen and (min-device-width: 834px) {
+    grid-column: 2 / span 1;
+  }
 }
 
 .image-1 {
-  grid-column: 2 / span 1;
+  grid-column: 1 / span 1;
+
+  @media only screen and (min-device-width: 834px) {
+    grid-column: 2 / span 1;
+  }
 }
 
 .image-2 {
-  grid-column: 3 / span 1;
+  grid-column: 2 / span 1;
+
+  @media only screen and (min-device-width: 834px) {
+    grid-column: 3 / span 1;
+  }
 }
 
 .project-info {
-  position: sticky;
   top: 2em;
+  grid-column: 1 / span 2;
+
+  @media only screen and (min-device-width: 834px) {
+    position: sticky;
+  }
 }
 
 .project-meta {
