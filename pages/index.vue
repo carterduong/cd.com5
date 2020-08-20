@@ -2,28 +2,24 @@
   <main>
     <Hero />
     <main class="grid">
-      <header
-        class="header-name"
-        style="margin-top: 50vh; margin-bottom: 49vh;"
-      >
-        Carter Duong
-      </header>
-
-      <header
-        class="web-dev-header"
-        style="margin: calc(80vh + 1em) 2em 0 2em;"
-      >
-        <span>Frontend Web Development</span>
-        <span>&</span>
-      </header>
-
-      <header
-        class="web-dev-header"
-        style="margin: calc(80vh + 1em) 2em 0 2em;"
-      >
-        <span>Design</span>
-        <span>(other things, too)</span>
-      </header>
+      <div class="header-container">
+        <template v-if="screenWidth < 834">
+          Carter Duong
+        </template>
+        <template v-else>
+          <header class="name-header">
+            Carter Duong
+          </header>
+          <header class="web-dev-header">
+            <span>Frontend Web Development</span>
+            <span>&</span>
+          </header>
+          <header class="design-header">
+            <span>Design</span>
+            <span>(other things, too)</span>
+          </header>
+        </template>
+      </div>
 
       <template v-for="project in projects">
         <project :key="project.title" :project="project" />
@@ -34,6 +30,7 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import Hero from '~/components/Hero.vue'
 import Project from '~/components/Project.vue'
 import Footer from '~/components/Footer.vue'
@@ -53,29 +50,45 @@ export default {
     return {
       projects
     }
+  },
+  computed: {
+    ...mapState({
+      screenWidth: (state) => state.screenWidth
+    })
+  },
+  mounted() {
+    this.$store.commit('setScreenWidth', window.innerWidth)
+    window.addEventListener('resize', this.onResizeWindow)
+  },
+  methods: {
+    onResizeWindow() {
+      this.$store.commit('setScreenWidth', window.innerWidth)
+    }
   }
 }
 </script>
 
 <style lang="scss">
+@import '~assets/_variables.scss';
+
 .grid {
   display: block;
 
-  @media only screen and (min-device-width: 834px) {
+  @media only screen and (min-device-width: $tablet-portrait) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .grid header {
-  margin: 2em;
+  // margin: 2em;
   mix-blend-mode: exclusion;
 }
 
 .grid section {
   margin: 1em 1em 0 1em;
 
-  @media only screen and (min-device-width: 834px) {
+  @media only screen and (min-device-width: $tablet-portrait) {
     margin: 2em 2em 0 2em;
     grid-column: 1 / span 3;
   }
@@ -91,26 +104,35 @@ export default {
   grid-column: 3 / span 1;
 }
 
-.web-dev-header {
+/*     Header     */
+.header-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  @media only screen and (min-device-width: $tablet-portrait) {
+  }
+}
+
+.name-header {
+  // margin-top: 80vh;
+  margin: 1em;
+
+  @media only screen and (min-device-width: $tablet-portrait) {
+    margin-top: 50vh;
+    margin-bottom: 49vh;
+  }
+}
+
+.web-dev-header,
+.design-header {
   display: flex;
   justify-content: space-between;
-}
+  margin: 1em;
 
-.name {
-  border: 2px solid white;
-  border-radius: 2em;
-  padding: 0.4em 1em 0.5em 1em;
-  margin-bottom: 1em;
-  display: inline-block;
-  box-sizing: border-box;
-
-  color: black;
-  background-color: white;
-}
-
-.name:hover {
-  color: white;
-  background-color: black;
-  cursor: pointer;
+  @media only screen and (min-device-width: $tablet-portrait) {
+    margin: calc(80vh + 1em) 2em 0 2em;
+  }
 }
 </style>
