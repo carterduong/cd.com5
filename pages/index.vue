@@ -14,9 +14,7 @@
         style="margin: calc(80vh + 1em) 2em 0 2em;"
       >
         <span>Frontend Web Development</span>
-        <a href="https://www.youtube.com/watch?v=ut1Jb0-DXbg" target="_blank"
-          >&</a
-        >
+        <span>&</span>
       </header>
 
       <header
@@ -30,23 +28,22 @@
       <template v-for="project in projects">
         <project :key="project.title" :project="project" />
       </template>
-
-      <footer>
-        info@carterduong.com
-      </footer>
     </main>
+    <Footer />
   </main>
 </template>
 
 <script>
 import Hero from '~/components/Hero.vue'
 import Project from '~/components/Project.vue'
+import Footer from '~/components/Footer.vue'
 
 export default {
   name: 'Index',
   components: {
     Hero,
-    Project
+    Project,
+    Footer
   },
   async asyncData({ $content }) {
     const page = await $content('home').fetch()
@@ -63,11 +60,6 @@ export default {
 </script>
 
 <style lang="scss">
-p,
-.fifty {
-  width: 50%;
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -75,14 +67,16 @@ p,
 
 .grid header {
   margin: 2em;
-  position: sticky;
-  top: 2em;
+  // position: sticky;
+  // top: 2em;
   mix-blend-mode: exclusion;
 }
 
 .grid section {
-  height: 100vh;
   grid-column: 1 / span 3;
+  margin: 2em;
+  margin-bottom: 0;
+  // border: 1px dotted white;
 }
 
 .middle-rectangle {
@@ -95,32 +89,26 @@ p,
   grid-column: 3 / span 1;
 }
 
-.grid section {
-  margin: 1em;
-  border: 1px dotted white;
-}
-
 .web-dev-header {
   display: flex;
   justify-content: space-between;
-}
-
-footer {
-  margin: 2em;
 }
 
 .name {
   border: 2px solid white;
   border-radius: 2em;
   padding: 0.4em 1em 0.5em 1em;
+  margin-bottom: 1em;
+  display: inline-block;
+  box-sizing: border-box;
 
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
 }
 
 .name:hover {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: black;
   cursor: pointer;
 }
 </style>

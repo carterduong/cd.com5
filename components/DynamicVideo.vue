@@ -1,5 +1,8 @@
 <template>
-  <video :src="dynamicImage" />
+  <video autoplay muted loop>
+    <source :src="dynamicVideo" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 </template>
 
 <script>
