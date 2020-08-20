@@ -18,6 +18,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '~assets/_variables.scss';
+
 hr {
   margin: 1em 0 0 0;
   color: white;
@@ -28,7 +30,7 @@ hr {
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
 
-  @media only screen and (min-device-width: 834px) {
+  @media only screen and (min-device-width: $tablet-portrait) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -62,7 +64,7 @@ hr {
   width: 100%;
   grid-column: 1 / span 2;
 
-  @media only screen and (min-device-width: 834px) {
+  @media only screen and (min-device-width: $tablet-portrait) {
     grid-column: 2 / span 2;
   }
 }
@@ -70,7 +72,7 @@ hr {
 .image-50w {
   width: 100%;
 
-  @media only screen and (min-device-width: 834px) {
+  @media only screen and (min-device-width: $tablet-portrait) {
     grid-column: 2 / span 1;
   }
 }
@@ -78,7 +80,7 @@ hr {
 .image-1 {
   grid-column: 1 / span 1;
 
-  @media only screen and (min-device-width: 834px) {
+  @media only screen and (min-device-width: $tablet-portrait) {
     grid-column: 2 / span 1;
   }
 }
@@ -86,7 +88,7 @@ hr {
 .image-2 {
   grid-column: 2 / span 1;
 
-  @media only screen and (min-device-width: 834px) {
+  @media only screen and (min-device-width: $tablet-portrait) {
     grid-column: 3 / span 1;
   }
 }
@@ -95,8 +97,9 @@ hr {
   top: 2em;
   grid-column: 1 / span 2;
 
-  @media only screen and (min-device-width: 834px) {
+  @media only screen and (min-device-width: $tablet-portrait) {
     position: sticky;
+    grid-column: 1 / span 1;
   }
 }
 
