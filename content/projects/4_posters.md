@@ -3,7 +3,7 @@ title: Studies
 sort: 4
 format: '24 x 36 inch Posters'
 ---
-<div>
+<div class="project-info">
 <span class="name">Studies, Doodles</span>
 <div>
 
