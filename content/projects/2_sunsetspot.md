@@ -5,7 +5,9 @@ format: "Music Video, 4:55"
 skills: 3D Animation & Modeling, Logotype Design
 ---
 <div class="project-info">
-<span class="name">Sunset Spot Remix</span>
+<a class="name clickable" href="https://www.youtube.com/watch?v=wsdIg9eOpuc" target="_blank">
+Sunset Spot Remix
+</a>
 <div>
 A heavenly car crash.
 

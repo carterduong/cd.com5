@@ -5,7 +5,9 @@ format: '6 x 9 inch Magazine, 64 pages'
 skills: Art Direction, Design
 ---
 <div class="project-info">
-<span class="name">Fashion Quarterly 15</span>
+<a class="name clickable" href="https://drive.google.com/file/d/1RH-8dUJauF5vX_2Ge1ht_EuShS1039Dg/view?usp=sharing" target="_blank">
+Fashion Quarterly 15
+</a>
 <div>
 
 Fashion Quarterly 15 was a student-run magazine about the culture of style and creativity at UC San Diego.

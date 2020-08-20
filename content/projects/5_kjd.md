@@ -6,7 +6,9 @@ skills: Web Development
 collaborators: Design by Redwan El-Harrak
 ---
 <div class="project-info">
-<span class="name">oo.kerryjdean.com</span>
+<a class="name clickable" href="https://oo.kerryjdean.com/" target="_blank">
+oo.kerryjdean.com
+</a>
 <div>
 Infinitely looping website developed for the promotion of Kerry J Dean's Observations and Orchestrations exhibition.
 

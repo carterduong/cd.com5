@@ -48,7 +48,7 @@ hr {
   margin-bottom: 1em;
 }
 
-.name:hover {
+.clickable:hover {
   color: white;
   background-color: black;
   text-shadow: 0px 0px 4px white;
