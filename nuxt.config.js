@@ -12,6 +12,10 @@ export default {
         hid: 'description',
         name: 'description',
         content: ''
+      },
+      {
+        name: 'robots',
+        content: 'noindex'
       }
     ],
     link: [
