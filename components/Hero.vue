@@ -111,7 +111,7 @@ canvas[resize] {
   display: flex;
   flex-direction: column;
 
-  @media only screen and (min-device-width: $tablet-portrait) {
+  @media only screen and (min-width: $tablet-portrait) {
     flex-direction: row;
     width: calc(100vw - 2em);
     padding: 1em;
@@ -123,7 +123,7 @@ canvas[resize] {
   height: calc(40% - 2em);
   width: calc(100% - 2em);
 
-  @media only screen and (min-device-width: $tablet-portrait) {
+  @media only screen and (min-width: $tablet-portrait) {
     margin: 1em;
     height: calc(80% - 2em);
     width: calc(33.333% - 2em);
@@ -139,7 +139,7 @@ canvas[resize] {
 .rectangle-1 {
   display: none;
 
-  @media only screen and (min-device-width: $tablet-portrait) {
+  @media only screen and (min-width: $tablet-portrait) {
     height: calc(100% - 2em);
     display: flex;
     align-items: center;
@@ -162,7 +162,7 @@ canvas[resize] {
   flex-direction: column;
   justify-content: space-between;
 
-  @media only screen and (min-device-width: $tablet-portrait) {
+  @media only screen and (min-width: $tablet-portrait) {
     display: none;
   }
 }
@@ -171,7 +171,7 @@ canvas[resize] {
   display: none;
   margin-top: 1em;
 
-  @media only screen and (min-device-width: $tablet-portrait) {
+  @media only screen and (min-width: $tablet-portrait) {
     display: flex;
     justify-content: space-between;
   }

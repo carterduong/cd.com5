@@ -29,7 +29,7 @@ hr {
   display: flex;
   flex-direction: column;
 
-  @media only screen and (min-device-width: $tablet-portrait) {
+  @media only screen and (min-width: $tablet-portrait) {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 1em;
@@ -38,7 +38,7 @@ hr {
 
 /*    Text    */
 .info-container {
-  @media only screen and (min-device-width: $tablet-portrait) {
+  @media only screen and (min-width: $tablet-portrait) {
     // flex-basis: calc(100vw - 6em / 3);
     // margin-right: 1em;
   }
@@ -66,7 +66,7 @@ hr {
 }
 
 .info {
-  @media only screen and (min-device-width: $tablet-portrait) {
+  @media only screen and (min-width: $tablet-portrait) {
     position: sticky;
     top: 2em;
   }
@@ -83,7 +83,7 @@ hr {
   width: 100%;
   grid-column: 1 / span 2;
 
-  @media only screen and (min-device-width: $tablet-portrait) {
+  @media only screen and (min-width: $tablet-portrait) {
     // grid-column: 2 / span 2;
   }
 }
@@ -91,7 +91,7 @@ hr {
 .image-50w {
   width: 100%;
 
-  @media only screen and (min-device-width: $tablet-portrait) {
+  @media only screen and (min-width: $tablet-portrait) {
     grid-column: 1 / span 1;
   }
 }
@@ -99,7 +99,7 @@ hr {
 .image-1 {
   grid-column: 1 / span 1;
 
-  @media only screen and (min-device-width: $tablet-portrait) {
+  @media only screen and (min-width: $tablet-portrait) {
     // grid-column: 2 / span 1;
   }
 }
@@ -107,7 +107,7 @@ hr {
 .image-2 {
   grid-column: 2 / span 1;
 
-  @media only screen and (min-device-width: $tablet-portrait) {
+  @media only screen and (min-width: $tablet-portrait) {
     // grid-column: 3 / span 1;
   }
 }

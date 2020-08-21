@@ -55,7 +55,7 @@ export default {
 .grid {
   display: block;
 
-  @media only screen and (min-device-width: $tablet-portrait) {
+  @media only screen and (min-width: $tablet-portrait) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1em;
@@ -65,7 +65,7 @@ export default {
 .grid section {
   margin: 1em 1em 0 1em;
 
-  @media only screen and (min-device-width: $tablet-portrait) {
+  @media only screen and (min-width: $tablet-portrait) {
     margin: 2em 2em 0 2em;
     grid-column: 1 / span 3;
   }
