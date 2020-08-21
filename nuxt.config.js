@@ -14,7 +14,14 @@ export default {
         content: ''
       }
     ],
-    link: [{ rel: 'stylesheet', href: 'https://use.typekit.net/jmz4hgy.css' }]
+    link: [{ rel: 'stylesheet', href: 'https://use.typekit.net/jmz4hgy.css' }],
+    script: [
+      {
+        src: 'https://cdn.usefathom.com/script.js',
+        site: 'YTMBEHCB',
+        defer: 'true'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
