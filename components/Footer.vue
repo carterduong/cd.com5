@@ -20,6 +20,15 @@
         with a B.A. in Interdisciplinary Computing and the Arts, and is open to
         full-time or freelance collaborations.
       </div>
+
+      <p>
+        <a href="mailto:info@carterduong.com" target="_blank">Email</a>
+        <br />
+        <a href="https://github.com/carterduong" target="_blank">GitHub</a>
+        <br />
+        <a href="http://are.na./carter-duong" target="_blank">Are.na</a>
+      </p>
+
       <p class="♪">
         <a
           href="https://whoarei.bandcamp.com/track/love-will-shine"
