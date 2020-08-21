@@ -3,10 +3,22 @@
     <div>
       <p class="name">About</p>
       <div>
-        Carter Duong is a designer and developer from the Bay Area and near Los
-        Angeles. He graduated from UC San Diego with a B.A. in Interdisciplinary
-        Computing and the Arts and is open to full-time or freelance
-        collaborations.
+        Carter Duong is a designer and developer from the Bay Area
+        <sup>
+          <a href="https://goo.gl/maps/cKExn6muhyq" target="_blank">1</a>
+          <span>+</span>
+          <a href="https://goo.gl/maps/5SW5ohjML3i9iRJ16" target="_blank">2</a>
+        </sup>
+        and based near Los Angeles
+        <sup>
+          <a href="https://goo.gl/maps/eZz1efNkuHkCykZi9" target="_blank">3</a>
+        </sup>
+        . He graduated from UC San Diego
+        <sup>
+          <a href="https://goo.gl/maps/huatrW5chYxzW6xy8" target="_blank">4</a>
+        </sup>
+        with a B.A. in Interdisciplinary Computing and the Arts, and is open to
+        full-time or freelance collaborations.
       </div>
       <p class="♪">
         <a
@@ -20,9 +32,9 @@
     <div>
       <p class="name">Colophon</p>
       <div>
-        This site was generated using Nuxt. Content is managed by the
-        <a href="">Nuxt Content</a> module. Hosting is provided by Vercel (𝕽𝕴𝕻
-        Zeit). Text is set in Unica.
+        This site was generated using Nuxt, uses the Nuxt Content module to
+        manage content, and is hosted using Vercel (𝕽𝕴𝕻 Zeit). Text is set in
+        Unica.
       </div>
     </div>
   </footer>
