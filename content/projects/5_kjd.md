@@ -5,7 +5,8 @@ format: Looping website
 skills: Web Development
 collaborators: Design by Redwan El-Harrak
 ---
-<div class="project-info">
+<div class="info-container">
+<div class="info">
 <a class="name clickable" href="https://oo.kerryjdean.com/" target="_blank">
 oo.kerryjdean.com
 </a>
@@ -17,5 +18,8 @@ Infinitely looping website developed for the promotion of Kerry J Dean's Observa
 - Vanilla DOM, jQuery, Kirby
 </div>
 </div>
+</div>
 
+<div class="image-container">
 <dynamic-image filename="screenshots/oo-1.png" class="image-100w"></dynamic-image>
+</div>
