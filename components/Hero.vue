@@ -37,20 +37,62 @@ export default {
   mounted() {
     paper.install(window)
     paper.setup('canvas-1')
-    let path = new paper.Path()
-    path.strokeColor = 'white'
-    let start = new paper.Point(100, 100)
-    path.moveTo(start)
-    path.lineTo(start.add([200, -50]))
-    paper.view.draw()
+    const h = document.getElementById('canvas-1').offsetHeight
+    const w = document.getElementById('canvas-1').offsetWidth
+    // let path = new paper.Path()
+    // path.strokeColor = 'white'
+    // let start = new paper.Point(100, 100)
+    // path.moveTo(start)
+    // path.lineTo(start.add([200, -50]))
+    // paper.view.draw()
+
+    // const circle = new paper.Path.Ellipse({
+    //   // point: [h / 4, w / 4],
+    //   point: [0, 0],
+    //   size: [w, h],
+    //   // size: [200, 200],
+    //   strokeColor: 'white',
+    //   blendMode: 'exclusion'
+    // })
+    // circle.smooth()
+
+    let path = new paper.Path.Rectangle({
+      topLeft: [0, 0],
+      bottomRight: [w, h],
+      fillColor: {
+        gradient: {
+          // stops: ['transparent', 'transparent', 'grey'],
+          stops: [
+            ['green', 0.05],
+            ['red', 0.9],
+            ['blue', 1]
+          ],
+          radial: true
+        },
+        origin: [w / 2, h / 2],
+        destination: [w, h]
+      }
+    })
 
     paper.setup('canvas-2')
-    path = new paper.Path()
-    path.strokeColor = 'white'
-    start = new paper.Point(100, 100)
-    path.moveTo(start)
-    path.lineTo(start.add([200, -50]))
-    paper.view.draw()
+
+    path = new paper.Path.Rectangle({
+      topLeft: [0, 0],
+      bottomRight: [w, h],
+      fillColor: {
+        gradient: {
+          // stops: ['transparent', 'transparent', 'grey'],
+          stops: [
+            ['magenta', 0.05],
+            ['cyan', 0.9],
+            ['yellow', 1]
+          ],
+          radial: true
+        },
+        origin: [w / 2, h / 2],
+        destination: [w, h]
+      }
+    })
   }
 }
 </script>
