@@ -1,6 +1,15 @@
 <template>
   <footer class="grid">
     <div>
+      <p class="name">About</p>
+      <p>
+        Carter Duong is a designer and developer from the Bay Area and near Los
+        Angeles. He graduated from UC San Diego with a B.A. in Interdisciplinary
+        Computing and the Arts, and is open to full-time or freelance
+        collaborations.
+      </p>
+    </div>
+    <div>
       <p class="name">Colophon</p>
       <p>
         This site was generated using Nuxt. Content is managed by the
@@ -8,7 +17,7 @@
         is set in Unica.
       </p>
       <p class="♪">
-        <a href="https://apronrecords.bandcamp.com/track/being" class="">
+        <a href="https://apronrecords.bandcamp.com/track/being" target="_blank">
           ♪
         </a>
       </p>
