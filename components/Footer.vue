@@ -2,25 +2,28 @@
   <footer class="grid">
     <div>
       <p class="name">About</p>
-      <p>
+      <div>
         Carter Duong is a designer and developer from the Bay Area and near Los
         Angeles. He graduated from UC San Diego with a B.A. in Interdisciplinary
-        Computing and the Arts, and is open to full-time or freelance
+        Computing and the Arts and is open to full-time or freelance
         collaborations.
+      </div>
+      <p class="♪">
+        <a
+          href="https://whoarei.bandcamp.com/track/love-will-shine"
+          target="_blank"
+        >
+          ♪
+        </a>
       </p>
     </div>
     <div>
       <p class="name">Colophon</p>
-      <p>
+      <div>
         This site was generated using Nuxt. Content is managed by the
-        <a href="">Nuxt Content</a> module. Hosting is provided by Vercel. Text
-        is set in Unica.
-      </p>
-      <p class="♪">
-        <a href="https://apronrecords.bandcamp.com/track/being" target="_blank">
-          ♪
-        </a>
-      </p>
+        <a href="">Nuxt Content</a> module. Hosting is provided by Vercel (𝕽𝕴𝕻
+        Zeit). Text is set in Unica.
+      </div>
     </div>
   </footer>
 </template>
@@ -32,9 +35,16 @@ export default {
 </script>
 
 <style lang="scss">
+@import '~assets/_variables.scss';
+
 footer {
-  margin: 2em;
-  height: calc(100vh - 4em);
+  margin: 1em;
+  height: calc(100vh - 2em);
+
+  @media only screen and (min-device-width: $tablet-portrait) {
+    margin: 2em;
+    height: calc(100vh - 4em);
+  }
 }
 
 a {

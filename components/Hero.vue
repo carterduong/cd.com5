@@ -83,9 +83,9 @@ export default {
         gradient: {
           // stops: ['transparent', 'transparent', 'grey'],
           stops: [
-            ['magenta', 0.05],
-            ['cyan', 0.9],
-            ['yellow', 1]
+            ['yellow', 0.05],
+            ['magenta', 0.9],
+            ['cyan', 1]
           ],
           radial: true
         },
@@ -113,16 +113,18 @@ canvas[resize] {
 
   @media only screen and (min-device-width: $tablet-portrait) {
     flex-direction: row;
+    width: calc(100vw - 2em);
+    padding: 1em;
   }
 }
 
 .rectangle {
-  padding: 1em;
+  margin: 1em 1em 0 1em;
   height: calc(40% - 2em);
   width: calc(100% - 2em);
 
   @media only screen and (min-device-width: $tablet-portrait) {
-    padding: 2em;
+    margin: 1em;
     height: calc(80% - 2em);
     width: calc(33.333% - 2em);
   }
@@ -154,8 +156,11 @@ canvas[resize] {
 }
 
 .mobile-container {
-  display: block;
+  display: flex;
   margin-top: 2em;
+  height: calc(20vh - 2em);
+  flex-direction: column;
+  justify-content: space-between;
 
   @media only screen and (min-device-width: $tablet-portrait) {
     display: none;
