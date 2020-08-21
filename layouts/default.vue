@@ -18,6 +18,7 @@ html {
   font-weight: 400;
   font-style: normal;
   font-size: 1.25em;
+  line-height: 1.3em;
 }
 
 a {
