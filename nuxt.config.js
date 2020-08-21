@@ -14,7 +14,10 @@ export default {
         content: ''
       }
     ],
-    link: [{ rel: 'stylesheet', href: 'https://use.typekit.net/jmz4hgy.css' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '' },
+      { rel: 'stylesheet', href: 'https://use.typekit.net/jmz4hgy.css' }
+    ],
     script: [
       {
         src: 'https://cdn.usefathom.com/script.js',
