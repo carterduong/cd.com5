@@ -5,7 +5,8 @@
     </div>
 
     <div class="rectangle">
-      <div class="rectangle-outline rectangle-2"></div>
+      <!-- <div class="rectangle-outline rectangle-2"></div> -->
+      <canvas id="canvas-1" resize="true"></canvas>
       <div class="desktop-container">
         <span>Frontend Web Development</span>
         <span>&</span>
@@ -13,7 +14,8 @@
     </div>
 
     <div class="rectangle">
-      <div class="rectangle-outline rectangle-3"></div>
+      <!-- <div class="rectangle-outline rectangle-3"></div> -->
+      <canvas id="canvas-2" resize="true"></canvas>
       <!-- Needed to change markup on mobile -->
       <div class="mobile-container">
         <div>Carter Duong</div>
@@ -28,13 +30,38 @@
 </template>
 
 <script>
+import * as paper from 'paper/dist/paper-full.min.js'
+
 export default {
-  name: 'Hero'
+  name: 'Hero',
+  mounted() {
+    paper.install(window)
+    paper.setup('canvas-1')
+    let path = new paper.Path()
+    path.strokeColor = 'white'
+    let start = new paper.Point(100, 100)
+    path.moveTo(start)
+    path.lineTo(start.add([200, -50]))
+    paper.view.draw()
+
+    paper.setup('canvas-2')
+    path = new paper.Path()
+    path.strokeColor = 'white'
+    start = new paper.Point(100, 100)
+    path.moveTo(start)
+    path.lineTo(start.add([200, -50]))
+    paper.view.draw()
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 @import '~assets/_variables.scss';
+
+canvas[resize] {
+  width: 100%;
+  height: 100%;
+}
 
 .hero-container {
   height: 100vh;
