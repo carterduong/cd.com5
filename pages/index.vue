@@ -58,12 +58,8 @@ export default {
   @media only screen and (min-device-width: $tablet-portrait) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
   }
-}
-
-.grid header {
-  // margin: 2em;
-  mix-blend-mode: exclusion;
 }
 
 .grid section {

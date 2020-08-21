@@ -26,12 +26,21 @@ hr {
 }
 
 .nuxt-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1em;
+  display: flex;
+  flex-direction: column;
 
   @media only screen and (min-device-width: $tablet-portrait) {
-    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1em;
+  }
+}
+
+/*    Text    */
+.info-container {
+  @media only screen and (min-device-width: $tablet-portrait) {
+    // flex-basis: calc(100vw - 6em / 3);
+    // margin-right: 1em;
   }
 }
 
@@ -56,8 +65,18 @@ hr {
   cursor: pointer;
 }
 
-.shadow {
-  box-shadow: 0px 0px 3px white;
+.info {
+  @media only screen and (min-device-width: $tablet-portrait) {
+    position: sticky;
+    top: 2em;
+  }
+}
+
+/*    Images    */
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
 }
 
 .image-100w {
@@ -65,7 +84,7 @@ hr {
   grid-column: 1 / span 2;
 
   @media only screen and (min-device-width: $tablet-portrait) {
-    grid-column: 2 / span 2;
+    // grid-column: 2 / span 2;
   }
 }
 
@@ -73,7 +92,7 @@ hr {
   width: 100%;
 
   @media only screen and (min-device-width: $tablet-portrait) {
-    grid-column: 2 / span 1;
+    grid-column: 1 / span 1;
   }
 }
 
@@ -81,7 +100,7 @@ hr {
   grid-column: 1 / span 1;
 
   @media only screen and (min-device-width: $tablet-portrait) {
-    grid-column: 2 / span 1;
+    // grid-column: 2 / span 1;
   }
 }
 
@@ -89,22 +108,11 @@ hr {
   grid-column: 2 / span 1;
 
   @media only screen and (min-device-width: $tablet-portrait) {
-    grid-column: 3 / span 1;
+    // grid-column: 3 / span 1;
   }
 }
 
-.project-info {
-  top: 2em;
-  grid-column: 1 / span 2;
-
-  @media only screen and (min-device-width: $tablet-portrait) {
-    position: sticky;
-    grid-column: 1 / span 1;
-  }
-}
-
-.project-meta {
-  font-size: 0.7em;
-  text-transform: uppercase;
+.shadow {
+  box-shadow: 0px 0px 3px white;
 }
 </style>
