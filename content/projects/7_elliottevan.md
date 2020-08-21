@@ -11,7 +11,7 @@ collaborators: Design with Francisco Borja
 elliottevan.com
 </a>
 <div>
-Media-heavy website created to showcase the volume of work of LA-based menswear designer Elliott Evan. Drawing heavily from the aesthetics of analog photography, the site functions as an archive for Evan's past and future work.
+Media-heavy website created to showcase the volume of work created by LA-based menswear designer Elliott Evan. Drawing heavily from the aesthetics of analog photography, the site functions as an archive for Evan's past and future work.
 
 - Website, Ongoing
 - Design in collaboration with Francisco Borja
