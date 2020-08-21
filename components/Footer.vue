@@ -42,7 +42,7 @@
       <p class="name">Colophon</p>
       <div>
         This site was generated using Nuxt, uses the Nuxt Content module to
-        manage content, and is hosted using Vercel (𝕽𝕴𝕻 Zeit). Text is set in
+        manage content, and is hosted using Vercel (R.I.P. Zeit). Text is set in
         Unica.
       </div>
     </div>

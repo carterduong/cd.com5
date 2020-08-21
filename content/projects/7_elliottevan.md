@@ -14,6 +14,7 @@ elliottevan.com
 Media-heavy website created to showcase the volume of work of LA-based menswear designer Elliott Evan. Drawing heavily from the aesthetics of analog photography, the site functions as an archive for Evan's past and future work.
 
 - Website, Ongoing
+- Design in collaboration with Francisco Borja
 - Frontend implemented with Nuxt, content managed via headless Kirby
 - Ecommerce via Snipcart, Image CDN via Imgix
 - Deployed on DigitalOcean using Docker containers
