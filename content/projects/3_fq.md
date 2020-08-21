@@ -16,6 +16,7 @@ The magazine aimed to facilitate critical conversations surrounding the nature o
 
 - 6 x 9" Magazine, 64 pages, 2019
 - Photography by Carter Duong, Lily Tang, and Dora Wang
+- Illustration by Vivian Xu
 - Art Direction, Design
 </div>
 </div>
