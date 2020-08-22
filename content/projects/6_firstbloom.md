@@ -11,8 +11,7 @@ skills: Design & Development
 Responsive flyer concept created for EDZ’s first party in Los Angeles. Cancelled due to Covid-19.
 
 - Website, 2020
-- Vector graphics via Paper.js
-- Design, Development
+- Vector graphics using Paper.js
 
 </div>
 </div>

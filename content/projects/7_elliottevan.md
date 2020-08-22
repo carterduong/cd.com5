@@ -15,9 +15,9 @@ Media-heavy website created to showcase the volume of work created by LA-based m
 
 - Website, Ongoing
 - Design in collaboration with Francisco Borja
-- Frontend implemented with Nuxt, content managed via headless Kirby
+- Statically generated with Nuxt, content managed via headless Kirby
 - Ecommerce via Snipcart, Image CDN via Imgix
-- Deployed on DigitalOcean using Docker containers
+- Continuously deployed to DigitalOcean using Docker and GitHub Actions
 </div>
 </div>
 </div>
